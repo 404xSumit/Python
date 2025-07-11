@@ -96,3 +96,13 @@ Ex -  6 = 1, 2, 3 = 6"""
 #     print("it is a perfect number")
 # else:
 #     print("it is not a perfect number")
+
+
+"""Print the reverse of a number (e.g., input: 1234 → output: 4321)"""
+
+n = 1234
+count=len(str(n))
+for i in range(1,count+1):
+    temp = n % 10 
+    n = n//10
+    print(temp)
