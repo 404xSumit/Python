@@ -100,9 +100,45 @@ Ex -  6 = 1, 2, 3 = 6"""
 
 """Print the reverse of a number (e.g., input: 1234 → output: 4321)"""
 
-n = 1234
-count=len(str(n))
-for i in range(1,count+1):
-    temp = n % 10 
-    n = n//10
-    print(temp)
+# n = 1234
+# count=len(str(n))
+# for i in range(1,count+1):
+#     temp = n % 10 
+#     n = n//10
+#     print(temp)
+
+"""Print all prime numbers between 1 and 100"""
+
+# for i in range(1,101):
+#     count = 0
+#     for j in range (1,101):
+#         if i % j == 0:
+#             count+=1
+#     if count == 2:
+#         print(i)
+
+"""Validate Password Strength
+Check if a given password string has at least one uppercase, one lowercase, one digit, and one special character.
+Only use loops (no built-in regex)."""
+
+
+password = input("Enter the password:- ")
+up=0
+lo=0
+sp=0
+for i in password:
+    asc=ord(i)
+    if asc>=97 and asc<=122:
+        lo +=1
+    elif asc >=65 and asc <= 90:
+        up +=1
+    elif asc >= 32 and asc<= 64:
+        sp+=1
+if  up <1:
+    print("Add Upper character ")
+if  lo <1:
+    print("Add Lower character ")
+if  sp <1:
+    print("Add Special character ")
+else:
+    print("VALID PASSWORD ")
