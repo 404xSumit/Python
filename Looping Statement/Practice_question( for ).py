@@ -122,23 +122,86 @@ Check if a given password string has at least one uppercase, one lowercase, one 
 Only use loops (no built-in regex)."""
 
 
-password = input("Enter the password:- ")
-up=0
-lo=0
-sp=0
-for i in password:
-    asc=ord(i)
-    if asc>=97 and asc<=122:
-        lo +=1
-    elif asc >=65 and asc <= 90:
-        up +=1
-    elif asc >= 32 and asc<= 64:
-        sp+=1
-if  up <1:
-    print("Add Upper character ")
-if  lo <1:
-    print("Add Lower character ")
-if  sp <1:
-    print("Add Special character ")
+# password = input("Enter the password:- ")
+# up=0
+# lo=0
+# sp=0
+# for i in password:
+#     asc=ord(i)
+#     if asc>=97 and asc<=122:
+#         lo +=1
+#     elif asc >=65 and asc <= 90:
+#         up +=1
+#     elif asc >= 32 and asc<= 64:
+#         sp+=1
+# if  up <1:
+#     print("Add Upper character ")
+# if  lo <1:
+#     print("Add Lower character ")
+# if  sp <1:
+#     print("Add Special character ")
+# else:
+#     print("VALID PASSWORD ")
+
+"""Print the Fibonacci series up to N terms"""
+
+
+# n = int(input("Enter the number:- "))
+# n1 = 0 
+# n2 = 1
+# for i in range(1,n+1):
+#     n3 = n1 + n2 
+#     print(n3)
+#     n1=n2
+#     n2=n3
+
+"""Find the GCD (HCF) of two numbers"""
+
+# n1 = int(input("Enter the number:- "))
+# n2 = int(input("Enter the number:- "))
+# hcf=0
+# temp=0
+# if n1<0:
+#     n1=n1*-1
+# if n2<0:
+#     n2=n2*-1
+# if n1>n2:
+#     temp=n1
+#     for i in range(1,temp):
+#         if n1%i==0 and n2%i==0:
+#             hcf=i
+# if n2 > n1 :
+#     temp = n2 
+#     for i in range(1,temp):
+#         if n1%i==0 and n2%i==0:
+#             hcf=i
+# print(hcf)
+
+
+"""Find the LCM of two numbers"""
+
+
+n1 = int(input("Enter the number:- "))
+n2 = int(input("Enter the number:- "))
+lcm=0
+temp=0
+if n1<0:
+    n1=n1*-1
+if n2<0:
+    n2=n2*-1
+if n1>n2:
+    temp=n1
+    while (True):
+        if (temp % n1==0 and temp % n2 ==0 ):
+            lcm=temp
+            break
+        temp+=1
 else:
-    print("VALID PASSWORD ")
+    temp=n2
+    while (True):
+        if (temp % n1==0 and temp % n2 ==0 ):
+            lcm=temp
+            break
+        temp+=1
+
+print(f"Lcm is {lcm}")
