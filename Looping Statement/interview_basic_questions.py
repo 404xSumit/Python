@@ -74,12 +74,13 @@
 
 """Variable swap without using 3rd variable"""
 
-a= 1
-b= 2
-print(f"The value of a before swaping is {a}")
-print(f"The value of b before swaping is {b}")
-a=a+b
-b=a-b
-a=a-b
-print(f"The value of after swaping a is {a}")
-print(f"The value of after swaping b is {b}")
+# a= 1
+# b= 2
+# print(f"The value of a before swaping is {a}")
+# print(f"The value of b before swaping is {b}")
+# a=a+b
+# b=a-b
+# a=a-b
+# print(f"The value of after swaping a is {a}")
+# print(f"The value of after swaping b is {b}")
+
