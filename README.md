@@ -1,5 +1,5 @@
 # Python-
-I this I will be tracking my learning path based on the whatever I learn everyday in Python Programming     
+I this I will be tracking my learning path based on the whatever I learn everyday in Python Programming                
 
 
 # [Topics going to cover in Python Basics are:- ] #
